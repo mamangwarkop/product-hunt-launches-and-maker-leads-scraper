@@ -1,0 +1,57 @@
+{
+    "actorSpecification": 1,
+    "fields": {
+        "productTitle": {
+            "type": "string",
+            "description": "Name of the launched product or startup"
+        },
+        "tagline": {
+            "type": ["string", "null"],
+            "description": "Short official one-liner pitch from Product Hunt"
+        },
+        "makerName": {
+            "type": ["string", "null"],
+            "description": "Name of the maker, founder, or hunter who posted the launch"
+        },
+        "productHuntUrl": {
+            "type": "string",
+            "description": "Official Product Hunt product page URL"
+        },
+        "publishedAt": {
+            "type": ["string", "null"],
+            "description": "ISO timestamp of when the product was posted on Product Hunt"
+        },
+        "websiteUrl": {
+            "type": ["string", "null"],
+            "description": "Direct external website URL of the startup"
+        },
+        "emails": {
+            "type": "array",
+            "description": "Discovered business contact emails on the startup's website"
+        },
+        "phoneNumbers": {
+            "type": "array",
+            "description": "Discovered phone or WhatsApp contact numbers"
+        },
+        "socials": {
+            "type": "object",
+            "description": "Discovered social links (Twitter/X, GitHub, Discord, LinkedIn)"
+        },
+        "installedPixels": {
+            "type": "array",
+            "description": "Marketing and analytics pixels detected (Meta Pixel, Google Analytics/GTM, TikTok Pixel)"
+        },
+        "missingPixels": {
+            "type": "array",
+            "description": "Critical growth marketing pixels not detected on the website"
+        },
+        "startupLeadScore": {
+            "type": "integer",
+            "description": "Opportunity score (0-100) indicating sales outreach readiness"
+        },
+        "agencyPitchAngle": {
+            "type": ["string", "null"],
+            "description": "Ready-to-send personalized sales outreach angle"
+        }
+    }
+}

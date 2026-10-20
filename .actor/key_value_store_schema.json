@@ -1,0 +1,13 @@
+{
+  "actorKeyValueStoreSchemaVersion": 1,
+  "title": "Product Hunt Leads Key-Value Store",
+  "description": "Contains the SUMMARY JSON report of the run.",
+  "collections": {
+    "summary": {
+      "title": "Run Summary",
+      "description": "Summary statistics of the Product Hunt extraction run.",
+      "keyPrefix": "SUMMARY",
+      "contentTypes": ["application/json"]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Product Hunt Launches & Maker Leads Output",
+  "description": "Dataset containing verified startup launches, contact emails, social links, tracking pixels, and agency pitch hooks.",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "string",
+      "title": "Extracted Startup Leads (Dataset)",
+      "template": "{{links.apiDefaultDatasetUrl}}/items"
+    },
+    "summary": {
+      "type": "string",
+      "title": "Run Summary Report (Key-Value Store)",
+      "template": "{{links.apiDefaultKeyValueStoreUrl}}/records/SUMMARY"
+    }
+  }
+}
