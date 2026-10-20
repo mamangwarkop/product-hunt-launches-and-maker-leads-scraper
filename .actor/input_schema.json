@@ -1,0 +1,36 @@
+{
+    "title": "Product Hunt Launches & Maker Leads Enricher Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "source": {
+            "title": "Launch Source",
+            "type": "string",
+            "description": "both = Product Hunt + Hacker News Show HN launches (recommended). product_hunt = Product Hunt daily launches. show_hn = Hacker News Show HN launches.",
+            "enum": ["both", "product_hunt", "show_hn"],
+            "default": "both"
+        },
+        "maxItems": {
+            "title": "Max Items to Extract",
+            "type": "integer",
+            "description": "Maximum number of daily launches to extract and enrich (default 50).",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 100
+        },
+        "enrichWebsites": {
+            "title": "Enrich Startup Websites",
+            "type": "boolean",
+            "description": "If true, follows the startup's live website redirect to extract founder emails, social links (Twitter/X, Discord, GitHub), and marketing pixels.",
+            "default": true
+        },
+        "filterKeywords": {
+            "title": "Filter Keywords (Optional)",
+            "type": "array",
+            "description": "Optional list of keywords to filter products by title or tagline (e.g. ['AI', 'SaaS', 'Marketing', 'Developer Tools']). Leave empty to get all launches.",
+            "editor": "stringList",
+            "default": []
+        }
+    },
+    "required": ["maxItems"]
+}
